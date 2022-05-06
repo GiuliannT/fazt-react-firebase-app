@@ -21,7 +21,7 @@ export const Login = () => {
     setError("");
     try {
       await login(user.email, user.password);
-      navigate("/");
+      navigate("/fazt-react-firebase-app/");
     } catch (error) {
       setError(error.message);
     }
@@ -30,7 +30,7 @@ export const Login = () => {
   const handleGoogleSignin = async () => {
     try {
       await loginWithGoogle();
-      navigate("/");
+      navigate("/fazt-react-firebase-app/");
     } catch (error) {
       setError(error.message);
     }
