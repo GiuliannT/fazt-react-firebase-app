@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Login } from "./components/Login";
 import { ProtectedRoute } from "./components/ProtectedRoute";
@@ -8,7 +8,7 @@ import { AuthProvider } from "./context/authContext";
 export const App = () => {
   return (
     <div className="bg-slate-300 h-screen text-black flex">
-      <div>test</div>
+      <Link to='/test'>test</Link>
       <AuthProvider>
         <Routes>
           <Route
