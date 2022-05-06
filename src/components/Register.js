@@ -21,7 +21,7 @@ export const Register = () => {
     setError("");
     try {
       await signup(user.email, user.password);
-      navigate("/fazt-react-firebase-app/");
+      navigate("/");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         setError("Email already in use");
