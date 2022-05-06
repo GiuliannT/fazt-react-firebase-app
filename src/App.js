@@ -8,6 +8,7 @@ import { AuthProvider } from "./context/authContext";
 export const App = () => {
   return (
     <div className="bg-slate-300 h-screen text-black flex">
+      <div>test</div>
       <AuthProvider>
         <Routes>
           <Route
