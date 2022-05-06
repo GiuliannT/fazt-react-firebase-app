@@ -21,6 +21,7 @@ export const App = () => {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/test" element={<h1>Test123</h1>} />
         </Routes>
       </AuthProvider>
     </div>
